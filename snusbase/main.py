@@ -52,7 +52,6 @@ def main():
     parser.add_argument("--stats", action="store_true", help="Get Snusbase statistics")
     parser.add_argument("--ip", nargs="+", help="Get IP Whois information for an IP address")
     parser.add_argument("--hash", nargs="+", help="Lookup a hash")
-    parser.add_argument("--raw", action="store_true", help="Print raw JSON data")
     args = parser.parse_args()
  
     if args.search:
