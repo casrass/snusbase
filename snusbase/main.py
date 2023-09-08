@@ -62,12 +62,11 @@ def main():
         stats_response = get_snusbase_stats()
         print(json.dumps(stats_response, indent=4))
 
-
-    if args.ip_whois:
-        ip_whois_response = get_ip_whois(args.ip_whois)
+    if args.ip:
+        ip_whois_response = get_ip_whois(args.ip)
         print(json.dumps(ip_whois_response, indent=4))
 
-    if args.hash_lookup:
+    if args.hash:
         hash_lookup_response = hash_lookup(args.hash_lookup, ["hash"])
         print(json.dumps(hash_lookup_response, indent=4))
 
