@@ -67,7 +67,7 @@ def main():
         print(json.dumps(ip_whois_response, indent=4))
 
     if args.hash:
-        hash_lookup_response = hash_lookup(args.hash_lookup, ["hash"])
+        hash_lookup_response = hash_lookup(args.hash, ["hash"])
         print(json.dumps(hash_lookup_response, indent=4))
 
 
